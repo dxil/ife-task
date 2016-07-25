@@ -1,0 +1,253 @@
+$selectcolor: #383D4E;
+$color: #B9BABD;
+$licolor: #67778B;
+$fontcolor: #EDEDE0;
+
+/**头部**/
+.header {
+	height: 58px;
+	background-color: #2189C0;
+		
+	.header-logo {
+		float: left;
+		padding: 10px 0 0 20px;
+		
+		}
+
+	.header-box {
+		width: 1200px;
+		height:100%;
+		margin: 0 50px;
+		padding-right: 60px;
+		background-color: #2189C0;
+
+		.header-search {
+			float: right;
+			padding-top: 14px;
+
+			input {
+				height: 28px;
+				width: 300px;
+				font-size: 16px;
+				border-radius: 14px;
+				outline: none;
+				padding-left: 40px;
+				background: #fff url(../imgs/zoom.png) no-repeat 17px 6px;
+				line-height: 28px;
+			}
+
+
+			a {
+				display: inline-block;
+				height: 28px;
+				line-height: 28px;
+				color: #fff;
+				font-size: 14px;
+				margin: 0 20px;
+				padding-left: 20px;
+				background: url(../imgs/login.png) no-repeat 0 6px;
+			}
+		}
+	}
+}
+
+/*下半部分*/
+.container {
+	margin: 0 auto;
+	width: 1300px;
+	background-color: #2A2E3D;
+}
+
+/*左侧栏信息*/
+.project-list__info {
+	float: left;
+  width: 260px;
+
+	.info {
+		height: 140px;
+		padding-top: 20px;
+		padding-left: 15px;
+			
+		.info-pic {
+			float: left;
+			display: block;
+			margin-left:25px;
+			margin-right: 30px;
+			width: 55px;
+			height: 55px;
+			border: 1px solid $color;
+			border-radius: 50%;
+			text-align:center;
+			line-height: 55px;
+			font-size: 0;
+
+				span {
+					display: inline-block;
+					width: 46px;
+					height: 46px;
+					border-radius: 50%;
+					background-color: $color;
+					vertical-align: middle;
+				}
+			}
+		strong {
+			line-height: 54px;
+			font-size: 18px;
+			font-weight:normal;
+			color: $fontcolor;
+		}
+		.info-fans {
+			height: 50px;
+			margin-top: 22px;
+
+			li:nth-child(1){
+				border-right: 1px solid $licolor;
+			}
+
+			li {
+				float: left;
+				width: 100px;
+				height: 26px;
+				font-size: 14px;
+				color: $licolor;
+				text-align: center;
+			}
+		}
+	}
+}
+
+/*左侧栏列表按钮*/
+.list__info__ul {
+	height: 200px;
+		
+	.file-icon {
+		float: left;
+		width: 15px;
+		height: 15px;
+	}
+
+	.info__li__report{
+		padding-top: 8px;
+		background-color: $selectcolor;
+
+		.report-icon{
+			float: left;
+			width: 15px;
+			height: 15px;
+			margin-right: 15px;
+			background: url(../imgs/file_open.png) no-repeat center;
+		}
+
+		& > ul {
+			padding-top: 10px;
+			margin-left: 30px;
+
+			li {
+				min-height:25px;
+				line-height:25px;
+
+				.row {
+					margin-right: 10px;
+					padding-top: 10px;
+					background: url(../imgs/close_arrow.png) no-repeat center;
+				}
+				
+				.col {
+					margin-right: 10px;
+					padding-top: 10px;
+					background: url(../imgs/open_arrow.png) no-repeat center;
+				}								
+				
+				.file-close {
+					background: url(../imgs/file_close.png) no-repeat center;	
+				}
+				
+				.file-check {
+					background: url(../imgs/file_cur.png) no-repeat center;
+				}
+
+				.file-pic {
+					float: left;
+					width: 15px;
+					height: 15px;
+					margin-right: 5px;
+					padding-top: 10px;
+					
+				}
+
+				ul {
+					margin-left: 40px;
+					margin-bottom: 20px;
+
+					li {
+						height:25px;
+						margin-bottom: 5px;
+
+						.txt-open {
+							padding-top: 10px;
+							margin-right: 5px;
+							background: url(../imgs/doc_open.png) no-repeat center;
+						}
+
+						.txt-close {
+							padding-top: 10px;
+							margin-right: 5px;
+							background: url(../imgs/doc_close.png) no-repeat center;	
+						}
+					}
+				}
+			}		
+		}
+		.list__info__check {
+			color: $fontcolor;
+			}	
+		}
+	
+	li a {
+		color: $licolor;
+		font-size: 12px;
+		}
+
+	& > li {
+		padding-left: 45px;
+		min-height: 36px;
+		}
+	
+		.info__li {
+			height: 48px;
+			line-height:48px;
+
+			&:hover{
+				background-color: $selectcolor;
+			}
+
+		 	a {
+			// 	padding-left: 30px;
+
+			.file-icon {
+				padding-top: 30px;
+				margin-right: 16px;
+				}
+
+			.info__collect-icon{
+				background: url(../imgs/star.png) no-repeat center;
+				}
+			
+			.info__share-icon{
+				background: url(../imgs/share.png) no-repeat center;
+				}
+
+			.info__pic-store-icon{
+				background: url(../imgs/star.png) no-repeat center;
+				}
+
+			.info__record-icon{
+				background: url(../imgs/star.png) no-repeat center;
+				}
+
+			.info__acount-icon{
+				background: url(../imgs/user_info.png) no-repeat center;
+			}
+ 		}
+	}
+}
